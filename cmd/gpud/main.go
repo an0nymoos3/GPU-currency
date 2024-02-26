@@ -23,5 +23,5 @@ func main() {
 	price, currency := getInput()
 	gpud := gpupricing.ConvertToGpud(price, currency)
 
-	fmt.Printf("$%f %s = $%f GPUD \n", price, currency, gpud)
+	fmt.Printf("%f %s = $%f GPUD \n", price, currency, gpud)
 }
