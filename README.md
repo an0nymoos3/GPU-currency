@@ -5,7 +5,7 @@ GPUD is short for Graphics Processing Unit Dollar. It started as a stupid bit ab
 expensive purchases to how many GPUs you could by for the same amount of money in 2024.
 
 ## Building yourself 
-I have supplied a Makefile to make building easy. 
+A Makefile is supplied to make compiling easy. 
 Make sure you have Go installed on your system.
 
 - Execute ```make build``` in a terminal to build a binary. The binary is compiled and placed in bin/.
