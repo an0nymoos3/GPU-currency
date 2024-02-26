@@ -9,4 +9,4 @@ run:
  
 clean:
 	go clean
-	rm bin/${BINARY_NAME}
+	rm ./bin/${BINARY_NAME}
