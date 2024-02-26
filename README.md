@@ -19,3 +19,6 @@ However "we" see plenty of growth potential. Therefore "we" would like to add th
   - More currency conversions.
   - A website for easier conversions, without the need to download a binary.
   - A public API for developers to offer GPUD as a currency to their customers.
+
+## Shout out
+Big thanks to `https://bestvaluegpu.com/` for an awesome website tracking GPU prices.
