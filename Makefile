@@ -1,4 +1,4 @@
-BINARY_NAME=gpu
+BINARY_NAME=gpud
  
 build:
 	go build -o ./bin/${BINARY_NAME} cmd/gpud/main.go
