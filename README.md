@@ -16,9 +16,9 @@ Make sure you have Go installed on your system.
 To start with this project will create a binary that converts a USD price to a GPUD price. 
 However "we" see plenty of growth potential. Therefore "we" would like to add these features:
 
-  - More currency conversions.
-  - A website for easier conversions, without the need to download a binary.
-  - A public API for developers to offer GPUD as a currency to their customers.
+  - [x] More currency conversions.
+  - [ ] A website for easier conversions, without the need to download a binary.
+  - [ ] A public API for developers to offer GPUD as a currency to their customers.
 
 ## Shout out
 Big thanks to `https://bestvaluegpu.com/` for an awesome website tracking GPU prices.
