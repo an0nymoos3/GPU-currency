@@ -6,7 +6,7 @@ import (
 	"github.com/an0nymoos3/gpud/internals/gpupricing"
 )
 
-func get_input() int {
+func getInput() int {
 	var usd int
 
 	fmt.Print("Please enter price in USD: ")
@@ -15,7 +15,7 @@ func get_input() int {
 }
 
 func main() {
-	usd_price := get_input()
+	usd_price := getInput()
 	gpu_price := gpupricing.GetPrice()
 	gpud := float32(usd_price) / float32(gpu_price)
 
