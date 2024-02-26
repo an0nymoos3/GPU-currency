@@ -6,18 +6,22 @@ import (
 	"github.com/an0nymoos3/gpud/internals/gpupricing"
 )
 
-func getInput() float64 {
-	var usd float64
+func getInput() (float64, string) {
+	var price float64
+	var currency string
 
-	fmt.Print("Please enter price in USD: ")
-	fmt.Scan(&usd)
-	return usd
+	// fmt.Scan() scans space seperated tokens, which works well for price and currency input
+	fmt.Print("Please enter the price in the format price currency (eg. 500 USD): ")
+	fmt.Scan(&price)
+	fmt.Scan(&currency)
+
+	// Return price as f64 and currency as string
+	return price, currency
 }
 
 func main() {
-	usd_price := getInput()
-	gpu_price := gpupricing.GetPrice()
-	gpud := usd_price / float64(gpu_price)
+	price, currency := getInput()
+	gpud := gpupricing.ConvertToGpud(price, currency)
 
-	fmt.Printf("$%f USD = $%f GPUD \n", usd_price, gpud)
+	fmt.Printf("%f %s = $%f GPUD \n", price, currency, gpud)
 }
